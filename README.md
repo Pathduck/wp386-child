@@ -1,4 +1,3 @@
-# wp386-child
 wp386-child
 =========
 
