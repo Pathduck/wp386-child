@@ -1,0 +1,114 @@
+@charset "UTF-8";
+/*!
+Theme Name: WP386 (Stians)
+Template: wp386
+Theme URI: http://themes.kkob.us/blog/2013/08/05/wp386/
+Author: Keitaroh Kobayashi
+Author URI: http://themes.kkob.us/
+Description: A theme to make your blog look like some sort of thing from the future.
+Version: 1.1
+License: GNU General Public License v3
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Tags: two-columns, left-sidebar, black, blue, sticky-post, custom-menu
+
+WP386: A theme to make your blog look like some sort of thing from the future. Based on a Twitter Bootstrap theme: https://github.com/kristopolous/BOOTSTRA.386
+
+WP386 is based on Underscores http://underscores.me/, (C) 2012-2013 Automattic, Inc.
+
+*/
+
+@import url("bootstrap.css");
+
+/*! 
+WP386 Theme 
+*/
+article.comment-body{margin:20px 0}
+article.post.sticky .page-header,article.post.sticky{background-color:#0A0;margin:30px 0}
+article.post{-ms-word-wrap:break-word;word-wrap:break-word}
+blockquote p {color: white;}
+body.admin-bar .navbar-fixed-top{top:30px}
+body.admin-bar .sidebar-outer{margin-top:70px;}
+body.admin-bar.mp6 .navbar-fixed-top{top:32px}
+body.admin-bar.mp6 .sidebar-outer{margin-top:60px}
+embed,iframe,object{max-width:100%}
+footer.entry-meta{display:block;clear:both;padding:5px 0 5px;border-top:2px solid #bbbbbb}
+footer.site-footer{margin-bottom:5px}
+img{-webkit-filter: contrast(100%);-moz-filter: contrast(100%);-ms-filter: contrast(100%);-o-filter: contrast(100%);filter: contrast(100%);}
+pre{color: lime; padding: 5px;}
+.aligncenter{clear:both;display:block;margin:0 auto}
+.alignleft{display:inline;float:left;margin-right:0.5em; margin-bottom: 0.5em;}
+.alignright{display:inline;float:right;margin-left:0.5em; margin-bottom: 0.5em;}
+.blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
+.border-box,.widget_search input.search-field,.sidebar-container{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+.byline,.updated{display:none}
+.bypostauthor{display:initial}
+.clear:before,.clear:after{content:'';display:table;clear:both}
+.comment-content a{word-wrap:break-word}
+.comment-respond code{white-space:normal}
+.comment-respond input,label,textarea,select{margin:0px;width:auto}
+.comment-respond p{margin:0px 0px 10px}
+.comments-area{margin:30px 0 0;clear:both;}
+.comments-link,.edit-link{display:inline-block;padding: 0 14px;margin: 0 5px 5px; text-align: center;vertical-align: middle;background: none repeat scroll 0 0 #BBB;color: #000;border: none;border-radius: 0;box-shadow: 8px 7px 0 #000}
+.comments-link>a,.edit-link>a{color:#000}
+.comments-link>a:after,.edit-link>a:after{content: " >"}
+.comments-link>a:before,.edit-link>a:before{content: "< "}
+.comments-link>a:hover,.edit-link>a:hover,.comments-link>a:focus,.edit-link>a:focus{color:#ffffff;background-color:transparent}
+.entry-header{margin:30px 0;padding:10px;background-color:#0AA}
+.entry-content li{margin: 0.5em 0 0.5em 1em; list-style: square; list-style-position: inside;}
+.entry-content embed,iframe,object{display:block;margin: 0 auto}
+.entry-title{color:#FEFE54}
+.gallery-caption{display:initial}
+.hentry{margin:30 0 1.5em}
+.infinite-scroll .paging-navigation,.infinite-scroll.neverending .site-footer{display:none}
+.infinity-end.neverending .site-footer{display:block}
+.nav .dropdown ul.dropdown-menu .dropdown .dropdown-menu{left:100%;top:-4px}
+.nav .dropdown ul.dropdown-menu .dropdown>a::after{content:"?";float:right}
+.nav .dropdown ul.dropdown-menu>li{list-style-type:none}
+.nav .dropdown>a::after{content:"?";margin-left:4px}
+.nav-next{float:right;text-align:right;width:50%}
+.nav-previous{float:left;width:50%}
+.navbar-inverse .navbar-inner{background: #000000}
+.navbar{width: auto}
+.page-content img.wp-smiley,.entry-content img.wp-smiley,.comment-content img.wp-smiley{border:none;margin-bottom:0;margin-top:0;padding:0}
+.page-content,.entry-content,.entry-summary{margin:1.5em 0 0}
+.page-header h1{color: #FEFE54}
+.page-header{margin:30px 0;padding:10px;background-color:#0AA}
+.page-links{clear:both;margin:0 0 1.5em}
+.screen-reader-text:hover,.screen-reader-text:active,.screen-reader-text:focus{background-color:#f1f1f1;border-radius:3px;box-shadow:0 0 2px 2px rgba(0,0,0,0.6);clip:auto;color:#21759b;display:block;font-size:18px;font-weight:bold;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}
+.screen-reader-text{clip:rect(1px, 1px, 1px, 1px);position:absolute}
+.sidebar-affix{top:0;bottom:0}
+.sidebar-container input,form{margin:0}
+.sidebar-container ul,ol{margin:0 0 15px}
+.sidebar-container{padding:14px 16px;margin-bottom:0;-webkit-box-shadow:8px 7px 0 0 #000;-moz-box-shadow:8px 7px 0 0 #000;box-shadow:8px 7px 0 0 #000;background:#555;color:#fff}
+.sidebar-container{width:225px;overflow-x:hidden}
+.sidebar-outer{margin-top:45px;position:absolute;top:0;bottom:30px}
+.single .byline,.group-blog .byline{display:inline}
+.site-content .gallery a img{border:none;height:auto;max-width:90%}
+.site-content .gallery dd{margin:0}
+.site-content .gallery dt{margin-bottom:0.5em}
+.site-content .gallery{margin-bottom:1.5em}
+.site-content{margin:0 0 1.5em;overflow:hidden}
+.site-header{margin-bottom:15px}
+.theme-blackonwhite #site-description{color:#bbb}
+.theme-blackonwhite .page-header,.theme-blackonwhite .entry-header,.theme-blackonwhite .entry-header{background:#55FFFF}
+.theme-blackonwhite .sidebar-container{background-color:#AAA;color:#000}
+.theme-blackonwhite .wp-caption{border-color:#000}
+.theme-blackonwhite ::-moz-selection{background-color:#AA5500;color:#FFF}
+.theme-blackonwhite ::-webkit-selection{background-color:#AA5500;color:#FFF}
+.theme-blackonwhite ::selection{background-color:#AA5500;color:#FFF}
+.theme-blackonwhite a:hover,.theme-blackonwhite a:focus{color:#FFFFFF;background:#FF5555}
+.theme-blackonwhite article.post.sticky .page-header, .theme-blackonwhite article.post.sticky .entry-header{background-color:#5F5}
+.theme-blackonwhite a{color:#0000AA;text-decoration:none}
+.theme-blackonwhite h1,.theme-blackonwhite h2,.theme-blackonwhite h3,.theme-blackonwhite h4,.theme-blackonwhite h5,.theme-blackonwhite h6{color:#000}
+.theme-blackonwhite strong,.theme-blackonwhite em{color:#000}
+.theme-blackonwhite{background-color:#fff;color:#000}
+.video-player{margin-bottom:0.5em}
+.widget select{max-width:100%}
+.widget_search .search-submit{display:none}
+.widget_search input.search-field{width:100%;height:24px}
+.widget{margin:0 auto 0.7em}
+.wp-caption .wp-caption-text{margin:0.5em 0}
+.wp-caption img{display:block;margin:2% auto 0;max-width:98%}
+.wp-caption-text{text-align:center}
+.wp-caption{margin-bottom:0.5em;max-width:100%;clear:both}
+.wp-video {max-width: 100%;height: auto;margin: 1em auto;}
