@@ -22,10 +22,11 @@ WP386 is based on Underscores http://underscores.me/, (C) 2012-2013 Automattic, 
 /*! 
 WP386 Theme 
 */
+a:hover img,a:focus img{display: block;background:none}
 article.comment-body{margin:20px 0}
 article.post.sticky .page-header,article.post.sticky{background-color:#0A0;margin:30px 0}
 article.post{-ms-word-wrap:break-word;word-wrap:break-word}
-blockquote p {color: white;}
+blockquote p {color:white}
 body.admin-bar .navbar-fixed-top{top:30px}
 body.admin-bar .sidebar-outer{margin-top:70px;}
 body.admin-bar.mp6 .navbar-fixed-top{top:32px}
@@ -33,11 +34,12 @@ body.admin-bar.mp6 .sidebar-outer{margin-top:60px}
 embed,iframe,object{max-width:100%}
 footer.entry-meta{display:block;clear:both;padding:5px 0 5px;border-top:2px solid #bbbbbb}
 footer.site-footer{margin-bottom:5px}
-img{-webkit-filter: contrast(100%);-moz-filter: contrast(100%);-ms-filter: contrast(100%);-o-filter: contrast(100%);filter: contrast(100%);}
-pre{color: lime; padding: 5px;}
+img{-webkit-filter:contrast(100%);-moz-filter:contrast(100%);-ms-filter:contrast(100%);-o-filter:contrast(100%);filter:contrast(100%)}
+pre{color:lime;padding:5px;background-image: url("https: //monkey.org/images/line2.gif")}
+table {width:100%;background-color:transparent;border-collapse:collapse;border-spacing:0}
 .aligncenter{clear:both;display:block;margin:0 auto}
-.alignleft{display:inline;float:left;margin-right:0.5em; margin-bottom: 0.5em;}
-.alignright{display:inline;float:right;margin-left:0.5em; margin-bottom: 0.5em;}
+.alignleft{float:left;margin-right:0.5em;margin-bottom:0.5em}
+.alignright{float:right;margin-left:0.5em;margin-bottom:0.5em}
 .blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .border-box,.widget_search input.search-field,.sidebar-container{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 .byline,.updated{display:none}
@@ -47,15 +49,15 @@ pre{color: lime; padding: 5px;}
 .comment-respond code{white-space:normal}
 .comment-respond input,label,textarea,select{margin:0px;width:auto}
 .comment-respond p{margin:0px 0px 10px}
-.comments-area{margin:30px 0 0;clear:both;}
-.comments-link,.edit-link{display:inline-block;padding: 0 14px;margin: 0 5px 5px; text-align: center;vertical-align: middle;background: none repeat scroll 0 0 #BBB;color: #000;border: none;border-radius: 0;box-shadow: 8px 7px 0 #000}
+.comments-area{margin:30px 0 0;clear:both}
+.comments-link,.edit-link{display:inline-block;padding:0 14px;margin:0 5px 5px;text-align:center;vertical-align:middle;background:none repeat scroll 0 0 #BBB;color:#000;border:none;border-radius:0;box-shadow:8px 7px 0 #000}
 .comments-link>a,.edit-link>a{color:#000}
-.comments-link>a:after,.edit-link>a:after{content: " >"}
-.comments-link>a:before,.edit-link>a:before{content: "< "}
+.comments-link>a:after,.edit-link>a:after{content:" >"}
+.comments-link>a:before,.edit-link>a:before{content:"< "}
 .comments-link>a:hover,.edit-link>a:hover,.comments-link>a:focus,.edit-link>a:focus{color:#ffffff;background-color:transparent}
 .entry-header{margin:30px 0;padding:10px;background-color:#0AA}
-.entry-content li{margin: 0.5em 0 0.5em 1em; list-style: square; list-style-position: inside;}
-.entry-content embed,iframe,object{display:block;margin: 0 auto}
+.entry-content li{margin:0.5em 0 0.5em 1em;list-style:square;list-style-position:inside}
+.entry-content embed,iframe,object{display:block;margin:0 auto}
 .entry-title{color:#FEFE54}
 .gallery-caption{display:initial}
 .hentry{margin:30 0 1.5em}
@@ -67,11 +69,11 @@ pre{color: lime; padding: 5px;}
 .nav .dropdown>a::after{content:"?";margin-left:4px}
 .nav-next{float:right;text-align:right;width:50%}
 .nav-previous{float:left;width:50%}
-.navbar-inverse .navbar-inner{background: #000000}
-.navbar{width: auto}
+.navbar-inverse .navbar-inner{background:#000000}
+.navbar{width:auto}
 .page-content img.wp-smiley,.entry-content img.wp-smiley,.comment-content img.wp-smiley{border:none;margin-bottom:0;margin-top:0;padding:0}
 .page-content,.entry-content,.entry-summary{margin:1.5em 0 0}
-.page-header h1{color: #FEFE54}
+.page-header h1{color:#FEFE54}
 .page-header{margin:30px 0;padding:10px;background-color:#0AA}
 .page-links{clear:both;margin:0 0 1.5em}
 .screen-reader-text:hover,.screen-reader-text:active,.screen-reader-text:focus{background-color:#f1f1f1;border-radius:3px;box-shadow:0 0 2px 2px rgba(0,0,0,0.6);clip:auto;color:#21759b;display:block;font-size:18px;font-weight:bold;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}
@@ -111,4 +113,5 @@ pre{color: lime; padding: 5px;}
 .wp-caption img{display:block;margin:2% auto 0;max-width:98%}
 .wp-caption-text{text-align:center}
 .wp-caption{margin-bottom:0.5em;max-width:100%;clear:both}
-.wp-video {max-width: 100%;height: auto;margin: 1em auto;}
+.wp-video {max-width:100%;height:auto;margin:1em auto;}
+#today{text-decoration:underline}

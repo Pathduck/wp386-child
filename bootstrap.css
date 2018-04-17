@@ -1850,11 +1850,8 @@ select:focus:invalid:focus {
 
 input.search-query {
   padding-right: 14px;
-  padding-right: 4px \9;
   padding-left: 14px;
-  padding-left: 4px \9;
   /* IE7-8 doesn't have border-radius, so don't indent the padding */
-
   margin-bottom: 0;
 }
 
@@ -1890,7 +1887,6 @@ input.search-query {
 .form-horizontal .input-append {
   display: inline-block;
   *display: inline;
-  margin-bottom: 0;
   vertical-align: middle;
   *zoom: 1;
 }
@@ -2938,7 +2934,7 @@ table th[class*="span"],
 .dropdown-menu .divider {
   *width: 100%;
   height: 1px;
-  height: 0;
+  height: 0;			  
   margin: 9px 1px;
   *margin: -5px 0 5px;
   overflow: hidden;
@@ -2977,7 +2973,7 @@ table th[class*="span"],
   background-image: linear-gradient(to bottom, #fefe54, #fefe3b);
   background-repeat: repeat-x;
   outline: 0;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffefe54', endColorstr='#fffefe3b', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffefe54', endColorstr='#fffefe3b', GradientType=0);																														 
 }
 
 .dropdown-menu > .disabled > a,
@@ -2992,7 +2988,7 @@ table th[class*="span"],
   cursor: default;
   background-color: transparent;
   background-image: none;
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);																	
 }
 
 .open {
@@ -3198,7 +3194,7 @@ button.close {
   color: #000000;
   text-align: center;
   vertical-align: middle;
-  cursor: pointer;
+  cursor: default;
   background: #bbbbbb;
   border: 0;
   border-width: 0;
@@ -5480,7 +5476,6 @@ a.badge:focus {
     background-position: 0 0;
   }
 }
-
 @-o-keyframes progress-bar-stripes {
   from {
     background-position: 0 0;
