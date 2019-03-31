@@ -1,27 +1,28 @@
 <?php
 /*
 Template Name: Archives
-*/
+*/ 
+?>
 
-get_header(); ?>
+<?php get_header();?>
 
 <div id="container">
 	<div id="content" role="main">
 		<header class="entry-header">
 			<h1 class="entry-title"><?php the_title(); ?></h1>
 		</header>
-			
-		<div><?php get_search_form(); ?></div>
-		<div><br/></div>
+		<div><?php get_search_form();?></div>
 		<table>
 			<tr>
-				<td valign=top>
-					<h2>By Month</h2>
-					<ul><?php wp_get_archives('type=monthly'); ?></ul>
-					<!--<?php wp_get_archives( array('type' => 'monthly','format' => 'custom','after' => ' &sim; ')); ?>-->
+				<th>By Month</th>
+				<th>By Subject</th>
+			</tr>
+			<tr>
+				<td style="vertical-align:top">
+					<ul><?php wp_get_archives( array('type' => 'monthly','format' => 'custom','after' => ' &ndash; ')); ?></ul>
+					<!--<?php //wp_get_archives('type=monthly'); ?>-->
 				</td>
-				<td valign=top>
-					<h2>By Subject</h2>
+				<td style="vertical-align:top">
 					<ul><?php wp_list_categories(); ?></ul>
 				</td>
 			</tr>

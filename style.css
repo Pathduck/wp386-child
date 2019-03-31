@@ -35,8 +35,10 @@ embed,iframe,object{max-width:100%}
 footer.entry-meta{display:block;clear:both;padding:5px 0 5px;border-top:2px solid #bbbbbb}
 footer.site-footer{margin-bottom:5px}
 img{-webkit-filter:contrast(100%);-moz-filter:contrast(100%);-ms-filter:contrast(100%);-o-filter:contrast(100%);filter:contrast(100%)}
-pre{color:lime;padding:5px;background-image: url("https: //monkey.org/images/line2.gif")}
-table {width:100%;background-color:transparent;border-collapse:collapse;border-spacing:0}
+label{display:inline}
+pre{color:lime;background-color:#002100;padding:10px;width:95%;box-shadow:5px 5px black;margin:1em auto;background-image:url("/img/line2.gif")}
+table{width:100%;background-color:transparent;border-collapse:collapse;border-spacing:0}
+table th{color:white;text-align:left}
 .aligncenter{clear:both;display:block;margin:0 auto}
 .alignleft{float:left;margin-right:0.5em;margin-bottom:0.5em}
 .alignright{float:right;margin-left:0.5em;margin-bottom:0.5em}
@@ -45,17 +47,18 @@ table {width:100%;background-color:transparent;border-collapse:collapse;border-s
 .byline,.updated{display:none}
 .bypostauthor{display:initial}
 .clear:before,.clear:after{content:'';display:table;clear:both}
+.comments-area{margin:30px 0 0;clear:both}
 .comment-content a{word-wrap:break-word}
 .comment-respond code{white-space:normal}
 .comment-respond input,label,textarea,select{margin:0px;width:auto}
 .comment-respond p{margin:0px 0px 10px}
-.comments-area{margin:30px 0 0;clear:both}
 .comments-link,.edit-link{display:inline-block;padding:0 14px;margin:0 5px 5px;text-align:center;vertical-align:middle;background:none repeat scroll 0 0 #BBB;color:#000;border:none;border-radius:0;box-shadow:8px 7px 0 #000}
 .comments-link>a,.edit-link>a{color:#000}
 .comments-link>a:after,.edit-link>a:after{content:" >"}
 .comments-link>a:before,.edit-link>a:before{content:"< "}
 .comments-link>a:hover,.edit-link>a:hover,.comments-link>a:focus,.edit-link>a:focus{color:#ffffff;background-color:transparent}
-.entry-header{margin:30px 0;padding:10px;background-color:#0AA}
+.comment-form-comment label {display: block}
+.entry-header{margin:30px 0 auto;padding:10px;background-color:#0AA}
 .entry-content li{margin:0.5em 0 0.5em 1em;list-style:square;list-style-position:inside}
 .entry-content embed,iframe,object{display:block;margin:0 auto}
 .entry-title{color:#FEFE54}
@@ -107,11 +110,10 @@ table {width:100%;background-color:transparent;border-collapse:collapse;border-s
 .video-player{margin-bottom:0.5em}
 .widget select{max-width:100%}
 .widget_search .search-submit{display:none}
-.widget_search input.search-field{width:100%;height:24px}
+.widget_search input.search-field{width:100%;height:24px; box-shadow: 3px 3px 0 0 #000;border: none;}
 .widget{margin:0 auto 0.7em}
-.wp-caption .wp-caption-text{margin:0.5em 0}
-.wp-caption img{display:block;margin:2% auto 0;max-width:98%}
-.wp-caption-text{text-align:center}
 .wp-caption{margin-bottom:0.5em;max-width:100%;clear:both}
+.wp-caption img{display:block;margin:2% auto 0;max-width:98%}
+.wp-caption-text{text-align:center;margin:0.2em 0 0;font-style:italic}
 .wp-video {max-width:100%;height:auto;margin:1em auto;}
 #today{text-decoration:underline}
