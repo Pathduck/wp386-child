@@ -26,7 +26,7 @@
 		<div class="navbar navbar-inverse navbar-fixed-top">
 			<div class="navbar-inner">
 				<div class="container">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home" class="brand"><?php bloginfo( 'name' ); ?></a><div id="site-description"><br/><?php $fortune_file='bofh-excuses'; $fortune_args='-s -n 100'; include '/meta/s/stian/html/inc/fortune.php'; ?></div>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home" class="brand"><?php bloginfo( 'name' ); ?></a><div id="site-description"><br/><?php $fortune_file='bofh-excuses'; $fortune_args='-s -n 90'; include '/meta/s/stian/html/inc/fortune.php'; ?></div>
 
 					<?php $walker = new Bootstrap_Nav_Menu_Walker(); ?>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container' => false, 'menu_class' => 'nav', 'walker' => $walker, 'fallback_cb' => '' ) ); ?>
