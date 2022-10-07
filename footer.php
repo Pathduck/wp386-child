@@ -7,7 +7,6 @@
  * @package wp386
  */
 ?>
-
 				<footer id="colophon" class="site-footer" role="contentinfo">
 					<div class="site-info container">
 						<?php do_action( 'wp386_credits' ); ?>
@@ -24,15 +23,16 @@
 
 <?php wp_footer(); ?>
 
-</body>
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.js"></script>
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/bootstrap-386.js"></script>
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/bootstrap-transition.js"></script>
 <script>
-    _386 = { 
-        fastLoad: false ,
-        onePass: false , 
-        speedFactor: 1.5 
-    };
+_386 = { 
+  fastLoad: false,
+  onePass: false, 
+  speedFactor: 1.5
+};
 </script>
+
+</body>
 </html>
