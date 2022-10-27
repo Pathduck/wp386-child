@@ -27,6 +27,10 @@ function wp386_content_nav( $nav_id ) {
 	if ( $wp_query->max_num_pages < 2 && ( is_home() || is_archive() || is_search() ) )
 		return;
 
+	// Add rel attributes to next/previous posts links
+	add_filter('next_posts_link_attributes', function(){return 'rel="next"';});
+	add_filter('previous_posts_link_attributes', function(){return 'rel="prev"';});
+
 	$nav_class = ( is_single() ) ? 'post-navigation' : 'paging-navigation';
 
 	?>
@@ -41,11 +45,11 @@ function wp386_content_nav( $nav_id ) {
 	<?php elseif ( $wp_query->max_num_pages > 1 && ( is_home() || is_archive() || is_search() ) ) : // navigation links for home, archive, and search pages ?>
 
 		<?php if ( get_previous_posts_link() ) : ?>
-		<div class="nav-previous"><?php previous_posts_link( __( '<span class="meta-nav">&larr;</span> Newer posts', 'wp386' ) ); ?></div>
+			<div class="nav-previous"><?php previous_posts_link( __( '<span class="meta-nav">&larr;</span> Newer posts', 'wp386' ) ); ?></div>
 		<?php endif; ?>
 
 		<?php if ( get_next_posts_link() ) : ?>
-		<div class="nav-next"><?php next_posts_link( __( ' Older posts <span class="meta-nav">&rarr;</span>', 'wp386' ) ); ?></div>
+			<div class="nav-next"><?php next_posts_link( __( ' Older posts <span class="meta-nav">&rarr;</span>', 'wp386' ) ); ?></div>
 		<?php endif; ?>
 
 
