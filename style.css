@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*!
+/*
 Theme Name: WP386 (Stians)
 Template: wp386
 Theme URI: http://themes.kkob.us/blog/2013/08/05/wp386/
@@ -15,17 +15,19 @@ WP386: A theme to make your blog look like some sort of thing from the future. B
 
 WP386 is based on Underscores http://underscores.me/, (C) 2012-2013 Automattic, Inc.
 */
+
 @import url("bootstrap.css");
 
-/*! 
+/*
 WP386 Theme 
 */
+/* For Bootstrap transitions */
+/* body {visibility: hidden;} */
 a:hover img,a:focus img{background:none;}
 article.comment-body{margin:20px 0;}
 article.post.sticky .page-header,article.post.sticky{background-color:#0A0;margin:30px 0;}
 article.post{-ms-word-wrap:break-word;word-wrap:break-word;}
 blockquote p, blockquote div {color:white;}
-body {visibility: hidden;}
 body.admin-bar .navbar-fixed-top{top:30px;}
 body.admin-bar .sidebar-outer{margin-top:70px;}
 body.admin-bar.mp6 .navbar-fixed-top{top:32px;}
@@ -35,7 +37,7 @@ form input.search-field {border: inset;box-shadow: 3px 3px black;}
 form input.search-submit {border: outset;background: #bbb;}
 footer.entry-meta{display:block;clear:both;padding:5px 0 5px;border-top:2px solid #bbbbbb;}
 footer.site-footer{margin-bottom:5px;}
-img{-webkit-filter:contrast(100%);-moz-filter:contrast(100%);-ms-filter:contrast(100%);-o-filter:contrast(100%);filter:contrast(100%);}
+img{-webkit-filter:unset;-moz-filter:unset;-ms-filter:unset;-o-filter:unset;filter:unset;}
 label{display:inline;}
 pre{color:lime;background-color:#002100;padding:10px;width:95%;box-shadow:5px 5px black;margin:1em auto;background-image:url("/img/crt-lines.png");}
 table{width:100%;background-color:transparent;border-collapse:collapse;border-spacing:0;}
@@ -65,7 +67,7 @@ table th{color:white;text-align:left;}
 .entry-header{margin:30px 0 auto;padding:10px;background-color:#0AA;}
 .entry-content li{margin:0.5em 0 0.5em 1em;list-style:square;list-style-position:inside;}
 .entry-content embed,iframe,object{display:block;margin:0 auto;}
-.entry-content img:not(.emoji),.entry-content iframe {box-shadow: 5px 5px black !important; border:outset 2px #bbb !important; max-width: 90%}
+.entry-content img:not(.emoji),.entry-content iframe {display: block; margin: 0 auto; box-shadow: 5px 5px black; border:outset 2px #bbb !important; max-width: 500px;max-height: 310px;background: black;}
 .entry-title{color:#FEFE54;}
 .gallery-caption{display:initial;}
 .hentry{margin:30 0 1.5em;}
@@ -91,6 +93,7 @@ table th{color:white;text-align:left;}
 .sidebar-container ul,ol{margin:0 0 15px;}
 .sidebar-container{padding:14px 16px;margin-bottom:0;box-shadow:5px 5px black;background:#555;color:white;}
 .sidebar-container{width:225px;overflow-x:hidden;}
+.sidebar-container img {display: block; margin: 0 auto;}
 .sidebar-container a:hover img,.sidebar-container a:focus img {background: #555;}
 .sidebar-outer{margin-top:45px;position:absolute;top:0;bottom:30px;}
 .single .byline,.group-blog .byline{display:inline;}
@@ -100,10 +103,26 @@ table th{color:white;text-align:left;}
 .site-content .gallery{margin-bottom:1.5em;}
 .site-content{margin:0 0 1.5em;overflow:hidden;}
 .site-header{margin-bottom:15px;}
+.theme-blackonwhite #site-description{color:#bbb;}
+.theme-blackonwhite .page-header,.theme-blackonwhite .entry-header,.theme-blackonwhite .entry-header{background:#55FFFF;}
+.theme-blackonwhite .sidebar-container{background-color:#AAA;color:black;}
+.theme-blackonwhite .wp-caption{border-color:black;}
+.theme-blackonwhite ::-moz-selection{background-color:#AA5500;color:white;}
+.theme-blackonwhite ::-webkit-selection{background-color:#AA5500;color:white;}
+.theme-blackonwhite ::selection{background-color:#AA5500;color:white;}
+.theme-blackonwhite a:hover,.theme-blackonwhite a:focus{color:white;background:#FF5555;}
+.theme-blackonwhite article.post.sticky .page-header, .theme-blackonwhite article.post.sticky .entry-header{background-color:#5F5;}
+.theme-blackonwhite a{color:#0000AA;text-decoration:none;}
+.theme-blackonwhite h1,.theme-blackonwhite h2,.theme-blackonwhite h3,.theme-blackonwhite h4,.theme-blackonwhite h5,.theme-blackonwhite h6{color:black;}
+.theme-blackonwhite strong,.theme-blackonwhite em{color:black;}
+.theme-blackonwhite{background-color:white;color:black;}
+.video-player{margin-bottom:0.5em;}
 .widget select{max-width:100%;}
 .widget_search .search-submit{display:none;}
 .widget_search input.search-field{width:100%;height:24px;}
 .widget{margin:0 auto 0.7em;}
+.wp-calendar-nav-prev{float: left;}
+.wp-calendar-nav-next{float: right;}
 .wp-caption{margin-bottom:0.5em;max-width:100%;clear:both;}
 .wp-caption img{display:block;margin:2% auto 0;max-width:98%;}
 .wp-caption-text{text-align:center;margin:5px 0 0;font-style:italic;}
