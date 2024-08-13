@@ -23,6 +23,7 @@ WP386 Theme
 */
 /* For Bootstrap transitions */
 /* body {visibility: hidden;} */
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {color: revert;}
 a:hover img,a:focus img{background:none;}
 article.comment-body{margin:20px 0;}
 article.post.sticky .page-header,article.post.sticky{background-color:#0A0;margin:30px 0;}
@@ -39,9 +40,11 @@ footer.entry-meta{display:block;clear:both;padding:5px 0 5px;border-top:2px soli
 footer.site-footer{margin-bottom:5px;}
 img{-webkit-filter:unset;-moz-filter:unset;-ms-filter:unset;-o-filter:unset;filter:unset;}
 label{display:inline;}
+li.menu-item {padding-left:0;}
 pre{color:lime;background-color:#002100;padding:10px;width:95%;box-shadow:5px 5px black;margin:1em auto;background-image:url("/img/crt-lines.png");}
 table{width:100%;background-color:transparent;border-collapse:collapse;border-spacing:0;}
 table th{color:white;text-align:left;}
+ul{list-style: none;}
 #today{text-decoration:underline;}
 #site-description{clear:left;}
 #site-description pre {all:unset;}
@@ -66,8 +69,8 @@ table th{color:white;text-align:left;}
 .comment-form-comment label {display: block;}
 .entry-header{margin:30px 0 auto;padding:10px;background-color:#0AA;}
 .entry-content li{margin:0.5em 0 0.5em 1em;list-style:square;list-style-position:inside;}
-.entry-content embed,iframe,object{display:block;margin:0 auto;}
-.entry-content img:not(.emoji),.entry-content iframe {display: block; margin: 0 auto; box-shadow: 5px 5px black; border:outset 2px #bbb !important; max-width: 500px;max-height: 310px;background: black;}
+.entry-content embed,.entry-content iframe {display:block;margin:0 auto;}
+.entry-content img:not(.emoji),.entry-content iframe {box-shadow: 5px 5px black; border:outset 2px #bbb !important; max-width: 500px;max-height: 60%;background: black;}
 .entry-title{color:#FEFE54;}
 .gallery-caption{display:initial;}
 .hentry{margin:30 0 1.5em;}
@@ -94,7 +97,7 @@ table th{color:white;text-align:left;}
 .sidebar-container{padding:14px 16px;margin-bottom:0;box-shadow:5px 5px black;background:#555;color:white;}
 .sidebar-container{width:225px;overflow-x:hidden;}
 .sidebar-container img {display: block; margin: 0 auto;}
-.sidebar-container a:hover img,.sidebar-container a:focus img {background: #555;}
+.sidebar-container a:hover img,.sidebar-container a:focus img {background: transparent;}
 .sidebar-outer{margin-top:45px;position:absolute;top:0;bottom:30px;}
 .single .byline,.group-blog .byline{display:inline;}
 .site-content .gallery a img{border:none;height:auto;max-width:90%;}
@@ -113,6 +116,7 @@ table th{color:white;text-align:left;}
 .theme-blackonwhite a:hover,.theme-blackonwhite a:focus{color:white;background:#FF5555;}
 .theme-blackonwhite article.post.sticky .page-header, .theme-blackonwhite article.post.sticky .entry-header{background-color:#5F5;}
 .theme-blackonwhite a{color:#0000AA;text-decoration:none;}
+.theme-blackonwhite blockquote p, .theme-blackonwhite blockquote div {color:#555;}
 .theme-blackonwhite h1,.theme-blackonwhite h2,.theme-blackonwhite h3,.theme-blackonwhite h4,.theme-blackonwhite h5,.theme-blackonwhite h6{color:black;}
 .theme-blackonwhite strong,.theme-blackonwhite em{color:black;}
 .theme-blackonwhite{background-color:white;color:black;}

@@ -13,10 +13,11 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width">
 	<meta name="description" content="<?php bloginfo('description'); ?>">
+	<meta property="og:image" content="<?php echo esc_url( home_url( '/' ) ); ?>img/decscope-logo-250x.png" />
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<link rel="me" href="https://mastodon.sdf.org/@stian">
-	<link rel="me" href="https://social.vivaldi.net/@Pathduck">
+	<link rel="me" href="https://social.vivaldi.net/@pathduck">
 	<?php wp_head(); ?>
 </head>
 

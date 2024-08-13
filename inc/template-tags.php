@@ -31,7 +31,7 @@ function wp386_content_nav( $nav_id ) {
 	add_filter('next_posts_link_attributes', function(){return 'rel="next"';});
 	add_filter('previous_posts_link_attributes', function(){return 'rel="prev"';});
 
-	// Swap 'rel' attributes for single post next/previous nav links 
+	// Swap 'rel' attributes for single post next/previous nav links
 	add_filter('previous_post_link', function($format){return str_replace('rel="prev"','rel="next"',$format);});
 	add_filter('next_post_link', function($format){return str_replace('rel="next"','rel="prev"',$format);});
 
