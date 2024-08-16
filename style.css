@@ -29,6 +29,7 @@ article.comment-body{margin:20px 0;}
 article.post.sticky .page-header,article.post.sticky{background-color:#0A0;margin:30px 0;}
 article.post{-ms-word-wrap:break-word;word-wrap:break-word;}
 blockquote p, blockquote div {color:white;}
+body {color:#cccccc;}
 body.admin-bar .navbar-fixed-top{top:30px;}
 body.admin-bar .sidebar-outer{margin-top:70px;}
 body.admin-bar.mp6 .navbar-fixed-top{top:32px;}
@@ -36,15 +37,14 @@ body.admin-bar.mp6 .sidebar-outer{margin-top:60px;}
 embed,iframe,object{max-width:100%;}
 form input.search-field {border: inset;box-shadow: 3px 3px black;}
 form input.search-submit {border: outset;background: #bbb;}
-footer.entry-meta{display:block;clear:both;padding:5px 0 5px;border-top:2px solid #bbbbbb;}
+footer.entry-meta{display:block;clear:both;padding:5px 0 5px;border-top:2px solid #cccccc;}
 footer.site-footer{margin-bottom:5px;}
 img{-webkit-filter:unset;-moz-filter:unset;-ms-filter:unset;-o-filter:unset;filter:unset;}
 label{display:inline;}
-li.menu-item {padding-left:0;}
 pre{color:lime;background-color:#002100;padding:10px;width:95%;box-shadow:5px 5px black;margin:1em auto;background-image:url("/img/crt-lines.png");}
 table{width:100%;background-color:transparent;border-collapse:collapse;border-spacing:0;}
 table th{color:white;text-align:left;}
-ul{list-style: none;}
+table.archives span:last-of-type{display:none;}
 #today{text-decoration:underline;}
 #site-description{clear:left;}
 #site-description pre {all:unset;}
@@ -55,6 +55,7 @@ ul{list-style: none;}
 .border-box,.widget_search input.search-field,.sidebar-container{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
 .byline,.updated{display:none;}
 .bypostauthor{display:initial;}
+.categories ul {list-style:none;}
 .clear:before,.clear:after{content:'';display:table;clear:both;}
 .comments-area{margin:30px 0 0;clear:both;}
 .comment-content a{word-wrap:break-word;}
@@ -121,6 +122,7 @@ ul{list-style: none;}
 .theme-blackonwhite strong,.theme-blackonwhite em{color:black;}
 .theme-blackonwhite{background-color:white;color:black;}
 .video-player{margin-bottom:0.5em;}
+.widget li{padding-left:0;list-style-type:none;}
 .widget select{max-width:100%;}
 .widget_search .search-submit{display:none;}
 .widget_search input.search-field{width:100%;height:24px;}

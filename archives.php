@@ -10,18 +10,18 @@ Template Name: Archives
 			<h1 class="entry-title"><?php the_title(); ?></h1>
 		</header>
 		<div><?php get_search_form();?></div>
-		<table>
+		<table class="archives">
 			<tr>
 				<th>By Month</th>
 				<th>By Subject</th>
 			</tr>
 			<tr>
 				<td style="vertical-align:top">
-					<ul><?php wp_get_archives( array('type' => 'monthly','format' => 'custom','after' => ' &ndash; ')); ?></ul>
+					<?php wp_get_archives( array('type' => 'monthly','format' => '','after' => '&nbsp;<span>&ndash;</span>')); ?>
 					<!--<?php //wp_get_archives('type=monthly'); ?>-->
 				</td>
 				<td style="vertical-align:top">
-					<ul><?php wp_list_categories(); ?></ul>
+					<ul><?php wp_list_categories( array('title_li' => '') ); ?></ul>
 				</td>
 			</tr>
 		</table>
