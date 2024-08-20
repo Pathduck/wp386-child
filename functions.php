@@ -4,6 +4,7 @@
  * Custom template tags for this theme.
  */
 require get_stylesheet_directory() . '/inc/template-tags.php';
+
 /**
  * Hide WordPress Version Number from Generator Meta Tag
  */

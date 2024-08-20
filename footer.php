@@ -16,9 +16,9 @@
 			</div><!-- .site-info -->
 		</footer><!-- #colophon -->
 
-      </div><!-- .span9 -->
+	  </div><!-- .span9 -->
     </div><!-- .row -->
-	</div><!-- #main -->
+  </div><!-- #main -->
 </div><!-- #page -->
 <?php wp_footer(); ?>
 <!-- Bootstrap WP386 Transitions -->
