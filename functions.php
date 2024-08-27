@@ -8,7 +8,7 @@ require get_stylesheet_directory() . '/inc/template-tags.php';
 /**
  * Hide WordPress Version Number from Generator Meta Tag
  */
-remove_action('wp_head', 'wp_generator');
+//remove_action('wp_head', 'wp_generator');
 
 /**
  * Hide WordPress Version Number from the RSS Feeds

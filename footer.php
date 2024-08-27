@@ -16,13 +16,13 @@
 			</div><!-- .site-info -->
 		</footer><!-- #colophon -->
 
-	  </div><!-- .span9 -->
-    </div><!-- .row -->
-  </div><!-- #main -->
-</div><!-- #page -->
+		</div><!-- .span9 -->
+	</div><!-- .row -->
+</div><!-- #main -->
 <?php wp_footer(); ?>
 <!-- Bootstrap WP386 Transitions -->
-<!--<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.js"></script>
+<!--
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery.js"></script>
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/bootstrap-386.js"></script>
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/bootstrap-transition.js"></script>
 <script>
@@ -31,6 +31,7 @@ _386 = {
   onePass: false,
   speedFactor: 1.5
 };
-</script>-->
+</script>
+-->
 </body>
 </html>
