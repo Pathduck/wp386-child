@@ -583,7 +583,7 @@ form {
 	color: white;
 }
 
-.theme-blackonwhite A:hover,
+.theme-blackonwhite a:hover,
 .theme-blackonwhite a:focus {
 	color: white;
 	background: #FF5555;
