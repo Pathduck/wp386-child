@@ -133,6 +133,10 @@ table.archives span:last-of-type {
 	display: none;
 }
 
+table.archives td {
+	vertical-align: top;
+}
+
 #today {
 	text-decoration: underline;
 }
@@ -167,6 +171,8 @@ table.archives span:last-of-type {
 .archive .format-aside .entry-title {
 	display: none;
 }
+
+
 
 .border-box,
 .widget_search input.search-field,
@@ -259,6 +265,10 @@ table.archives span:last-of-type {
 	margin: 30px 0 auto;
 	padding: 10px;
 	background-color: #0AA;
+}
+
+.entry-content a:visited {
+	color: #cbcb01;
 }
 
 .entry-content li {
@@ -573,7 +583,7 @@ form {
 	color: white;
 }
 
-.theme-blackonwhite a:hover,
+.theme-blackonwhite A:hover,
 .theme-blackonwhite a:focus {
 	color: white;
 	background: #FF5555;

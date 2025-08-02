@@ -16,11 +16,11 @@ Template Name: Archives
 				<th>By Subject</th>
 			</tr>
 			<tr>
-				<td style="vertical-align:top">
+				<td>
 					<?php wp_get_archives( array('type' => 'monthly','format' => '','after' => '&nbsp;<span>&ndash;</span>')); ?>
 					<!--<?php //wp_get_archives('type=monthly'); ?>-->
 				</td>
-				<td style="vertical-align:top">
+				<td>
 					<ul><?php wp_list_categories( array('title_li' => '') ); ?></ul>
 				</td>
 			</tr>
