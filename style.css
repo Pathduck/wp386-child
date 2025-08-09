@@ -267,10 +267,6 @@ table.archives td {
 	background-color: #0AA;
 }
 
-.entry-content a:visited {
-	color: #cbcb01;
-}
-
 .entry-content li {
 	margin: 0.5em 0 0.5em 1em;
 	list-style: square;
