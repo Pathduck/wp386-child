@@ -1,18 +1,12 @@
 <?php
 
-/**
- * Custom template tags for this theme.
- */
+// Custom template tags for this theme.
 require get_stylesheet_directory() . '/inc/template-tags.php';
 
-/**
- * Hide WordPress Version Number from Generator Meta Tag
- */
+// Hide WordPress Version Number from Generator Meta Tag
 //remove_action('wp_head', 'wp_generator');
 
-/**
- * Hide WordPress Version Number from the RSS Feeds
- */
+// Hide WordPress Version Number from the RSS Feeds
 function remove_wp_version_rss() { return''; }
 add_filter('the_generator','remove_wp_version_rss');
 
@@ -23,4 +17,3 @@ function wp_maintenance_mode() {
     }
 }
 // add_action('get_header', 'wp_maintenance_mode');
-// Activate WordPress Maintenance Mode
