@@ -13,7 +13,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width">
 	<meta name="description" content="<?php bloginfo('description'); ?>">
-	<meta property="og:image" content="<?php echo esc_url( home_url( '/' ) ); ?>img/decscope-logo-250x.png" />
+	<meta property="og:image" content="<?php echo esc_url( home_url( '/' ) ); ?>img/decscope-logo-250x.png">
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<link rel="me" href="https://mastodon.sdf.org/@stian">
@@ -23,7 +23,7 @@
 
 <body <?php body_class(); ?>>
 <?php do_action( 'before' ); ?>
-<header id="masthead" class="site-header" role="banner">
+<header id="masthead" class="site-header">
 	<div class="navbar navbar-inverse navbar-fixed-top">
 		<div class="navbar-inner">
 			<div class="container">

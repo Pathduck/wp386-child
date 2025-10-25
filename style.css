@@ -20,11 +20,6 @@ WP386 is based on Underscores http://underscores.me/, (C) 2012-2013 Automattic, 
 /* For Bootstrap transitions */
 /* body {visibility: hidden;} */
 
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
-	color: revert;
-}
-
 a:hover img,
 a:focus img {
 	background: none;
@@ -41,7 +36,6 @@ article.post.sticky {
 }
 
 article.post {
-	-ms-word-wrap: break-word;
 	word-wrap: break-word;
 }
 
@@ -96,10 +90,6 @@ footer.site-footer {
 }
 
 img {
-	-webkit-filter: unset;
-	-moz-filter: unset;
-	-ms-filter: unset;
-	-o-filter: unset;
 	filter: unset;
 }
 
@@ -177,8 +167,6 @@ table.archives td {
 .border-box,
 .widget_search input.search-field,
 .sidebar-container {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
@@ -283,7 +271,7 @@ table.archives td {
 .entry-content .wp-video {
 	box-shadow: 5px 5px black;
 	border: outset 2px #bbb !important;
-	max-width: 500px;
+	max-width: 600px;
 	max-height: 60%;
 	background: black;
 }
@@ -297,7 +285,7 @@ table.archives td {
 }
 
 .hentry {
-	margin: 30 0 1.5em;
+	margin: 30px 0 1.5em;
 }
 
 .infinite-scroll .paging-navigation,
@@ -383,7 +371,6 @@ table.archives td {
 	background-color: #f1f1f1;
 	border-radius: 3px;
 	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-	clip: auto;
 	color: #21759b;
 	display: block;
 	font-size: 18px;
@@ -399,7 +386,6 @@ table.archives td {
 }
 
 .screen-reader-text {
-	clip: rect(1px, 1px, 1px, 1px);
 	position: absolute;
 }
 
@@ -564,17 +550,7 @@ form {
 	border-color: black;
 }
 
-.theme-blackonwhite ::-moz-selection {
-	background-color: #AA5500;
-	color: white;
-}
-
-.theme-blackonwhite ::-webkit-selection {
-	background-color: #AA5500;
-	color: white;
-}
-
-.theme-blackonwhite ::selection {
+.theme-blackonwhite::selection {
 	background-color: #AA5500;
 	color: white;
 }
